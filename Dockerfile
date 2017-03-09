@@ -1,5 +1,5 @@
 FROM daocloud.io/wordpress
-
+RUN echo 111
 RUN apt-get update && apt-get install -y ssmtp libfreetype6-dev \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr --with-freetype-dir=/usr \
 	&& docker-php-ext-install gd
