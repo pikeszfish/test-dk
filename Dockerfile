@@ -11,3 +11,4 @@ RUN touch /usr/local/etc/php/conf.d/uploads.ini \
 RUN touch /usr/local/etc/php/conf.d/ssmtp.ini \
 	&& echo "[mail function]" >> /usr/local/etc/php/conf.d/ssmtp.ini \
 	&& echo "sendmail_path = /usr/sbin/ssmtp -t;" >> /usr/local/etc/php/conf.d/ssmtp.ini
+RUN echo 111
